@@ -2,13 +2,6 @@
   <div></div>
 </template>
 
-<script setup>
-import { onMounted } from 'vue'
-import { ElMessage } from 'element-plus'
-
-onMounted(() => {
-  ElMessage.success('succss')
-})
-</script>
+<script setup></script>
 
 <style lang="scss" scoped></style>
