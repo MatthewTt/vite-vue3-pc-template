@@ -1,0 +1,55 @@
+// mixin
+// 清除浮动
+@mixin clearfix {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+// 多行隐藏
+@mixin text-overflow($clamp: 1) {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $clamp;
+  /*! autoprefixer: ignore next */
+  -webkit-box-orient: vertical;
+}
+
+//flex box
+@mixin flexbox($jc: space-between, $ai: center, $fd: row, $fw: nowrap) {
+  display: flex;
+  display: -webkit-flex;
+  flex: 1;
+  justify-content: $jc;
+  -webkit-justify-content: $jc;
+  align-items: $ai;
+  -webkit-align-items: $ai;
+  flex-direction: $fd;
+  -webkit-flex-direction: $fd;
+  flex-wrap: $fw;
+  -webkit-flex-wrap: $fw;
+}
+
+// 文本居中
+@mixin textCenter($height: 100%) {
+  height: $height;
+  line-height: $height;
+  text-align: center;
+}
+// 文字样式
+@mixin textStyle($fz: 14px, $color: #333, $fw: normal) {
+  font-size: $fz;
+  color: $color;
+  font-weight: $fw;
+}
+
+@mixin iconfont-liner {
+  background: -webkit-linear-gradient(50deg, var(--btn-theme-color), var(--btn-sec-theme-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

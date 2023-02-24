@@ -1,0 +1,8 @@
+// variables
+$background-color: #f8f8f8;
+$theme-color: var(--theme-color);
+$safe-bottom: constant(safe-area-inset-bottom);
+$safe-bottom: env(safe-area-inset-bottom);
+$input-border-color: #eaeef1;
+// 默认主题色，用于背景
+$default-theme-color: #3c71e3;
